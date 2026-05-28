@@ -3,6 +3,7 @@ from rest_framework.renderers import JSONRenderer
 from rest_framework.parsers import JSONParser
 import io
 
+
 def serialize_car_object(car):
     serializer = CarSerializer(car)
     content = JSONRenderer().render(serializer.data)
